@@ -27,7 +27,7 @@ apps use to render web content (in-app browsers, login screens, embedded pages).
 
 ## Install
 
-There are three ways to get it, easiest first:
+There are two ways to get it, easiest first:
 
 1. **Obtainium** - add this repository as an app source and Obtainium will track
    GitHub releases and update you automatically. Source URL:
