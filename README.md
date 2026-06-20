@@ -32,24 +32,26 @@ There are three ways to get it, easiest first:
 1. **Obtainium** - add this repository as an app source and Obtainium will track
    GitHub releases and update you automatically. Source URL:
    `https://github.com/DresOperatingSystems/DresOS-WebView`
-2. **IzzyOnDroid** - once it is listed, add the IzzyOnDroid repo to your F-Droid
-   client and install/update from there.
-3. **Manual** - download the latest `DresOS-WebView-arm64.apk` from
+2. **Manual** - download the latest `DresOS-WebView-arm64.apk` from
    [Releases](https://github.com/DresOperatingSystems/DresOS-WebView/releases)
    and install it.
 
 ## Make Android actually use it
 
 Installing the APK is not enough on its own; the framework keeps a whitelist of
-trusted WebView providers. Two pieces are needed:
+trusted WebView providers.
 
-1. Install this app.
-2. Install the **DresOS WebView Overlay** Magisk module, which adds
+We have made a Magisk module specifically for this so:
+
+. Install the **DresOS WebView** Magisk module, which adds
    `org.dresos.webview` to the framework whitelist by its signing certificate.
    It lives in
    [DresOS-Magisk-Modules/webview](https://github.com/DresOperatingSystems/DresOS-Magisk-Modules/tree/main/webview).
 
-Then select it:
+[Download latest release](https://github.com/DresOperatingSystems/DresOS-Magisk-Modules/releases/download/webview-v2.2.0/DresOS-WebView-v2_2_0.zip)
+
+
+If it doesn't automatically select it then select it:
 
 - **Settings > Developer options > WebView implementation > DresOS WebView**, or
 - `adb shell cmd webviewupdate set-webview-implementation org.dresos.webview`
@@ -86,7 +88,7 @@ hardening credited here is upstream work by the Chromium and Cromite projects.
 
 - Website: [dresoperatingsystems.github.io](https://dresoperatingsystems.github.io)
 - All DresOS projects: [github.com/DresOperatingSystems](https://github.com/DresOperatingSystems)
-- WebView Overlay module: [DresOS-Magisk-Modules/webview](https://github.com/DresOperatingSystems/DresOS-Magisk-Modules/tree/main/webview)
+- WebView module: [DresOS-Magisk-Modules/webview](https://github.com/DresOperatingSystems/DresOS-Magisk-Modules/tree/main/webview)
 - If DresOS is useful to you, please donate: [ko-fi.com/dresos](https://ko-fi.com/dresos)
 
 ## End notes
