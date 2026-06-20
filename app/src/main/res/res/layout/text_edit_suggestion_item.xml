@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView textSize="14sp" textColor="?android:attr/textColorPrimary" gravity="start|center_vertical" layout_gravity="start|center_vertical" paddingTop="8dp" paddingBottom="8dp" layout_width="match_parent" layout_height="@dimen/text_edit_suggestion_item_layout_height" singleLine="true" drawablePadding="8dp" fontFamily="sans-serif" paddingStart="16dp" paddingEnd="16dp"/>

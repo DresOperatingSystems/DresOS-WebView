@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.ui.hierarchicalmenu.MenuItemWithSubmenuView background="?android:attr/listChoiceBackgroundIndicator" layout_width="match_parent" layout_height="wrap_content" style="@style/ListMenuItemStyle">
+    <org.chromium.ui.widget.ChromeImageView id="@+id/menu_item_icon" visibility="gone" duplicateParentState="true" importantForAccessibility="no" style="@style/ListMenuItemIconStyle.Start"/>
+    <TextView id="@+id/menu_row_text" layout_width="0dp" layout_height="wrap_content" layout_weight="1" style="@style/TextAppearance.DensityAdaptive.ListMenuItem"/>
+    <ImageView id="@+id/submenu_arrow" background="@android:color/transparent" layout_width="?attr/listItemIconSize" layout_height="match_parent" src="@drawable/outline_chevron_right_24dp" scaleType="fitCenter" importantForAccessibility="no"/>
+</org.chromium.ui.hierarchicalmenu.MenuItemWithSubmenuView>

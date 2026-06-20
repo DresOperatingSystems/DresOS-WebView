@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout orientation="vertical" layout_width="wrap_content" layout_height="wrap_content">
+    <TextView textAppearance="@style/TextAppearance.AppCompat.Tooltip" textColor="?attr/tooltipForegroundColor" ellipsize="end" id="@+id/message" background="?attr/tooltipFrameBackground" paddingLeft="@dimen/tooltip_horizontal_padding" paddingTop="@dimen/tooltip_vertical_padding" paddingRight="@dimen/tooltip_horizontal_padding" paddingBottom="@dimen/tooltip_vertical_padding" layout_width="wrap_content" layout_height="wrap_content" layout_margin="@dimen/tooltip_margin" maxWidth="256dp" maxLines="3" paddingStart="@dimen/tooltip_horizontal_padding" paddingEnd="@dimen/tooltip_horizontal_padding"/>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape shape="rectangle">
+    <solid color="@color/dialog_bg_color_baseline"/>
+    <corners topLeftRadius="@dimen/context_menu_popup_border_radius" topRightRadius="@dimen/context_menu_popup_border_radius" bottomLeftRadius="@dimen/context_menu_popup_border_radius" bottomRightRadius="@dimen/context_menu_popup_border_radius"/>
+</shape>

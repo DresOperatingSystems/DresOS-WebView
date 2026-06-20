@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector>
+    <item state_checked="true" id="@+id/on" drawable="@drawable/btn_radio_on_mtrl"/>
+    <item id="@+id/off" drawable="@drawable/btn_radio_off_mtrl"/>
+    <transition drawable="@drawable/btn_radio_on_to_off_mtrl_animation" toId="@+id/off" fromId="@+id/on"/>
+    <transition drawable="@drawable/btn_radio_off_to_on_mtrl_animation" toId="@+id/on" fromId="@+id/off"/>
+</animated-selector>

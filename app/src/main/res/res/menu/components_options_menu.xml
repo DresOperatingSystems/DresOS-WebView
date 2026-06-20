@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <group id="@+id/components_menu">
+        <item id="@+id/options_menu_update" title="Update" showAsAction="ifRoom"/>
+    </group>
+</menu>

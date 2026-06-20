@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout gravity="center_vertical" orientation="horizontal" layout_width="match_parent" layout_height="wrap_content" baselineAligned="false">
+    <LinearLayout gravity="center_vertical" orientation="vertical" id="@+id/dropdown_label_wrapper" layout_width="0dp" layout_height="0dp" layout_weight="1">
+        <LinearLayout orientation="horizontal" layout_width="wrap_content" layout_height="wrap_content">
+            <TextView textAppearance="@style/TextAppearance.TextLarge.Primary.Baseline" ellipsize="end" id="@+id/dropdown_label" layout_width="wrap_content" layout_height="wrap_content" singleLine="true" includeFontPadding="false" layout_weight="1" textAlignment="viewStart" layout_marginStart="@dimen/autofill_dropdown_item_label_margin" layout_marginEnd="@dimen/autofill_dropdown_item_label_margin"/>
+            <TextView textAppearance="@style/TextAppearance.TextLarge.Primary.Baseline" id="@+id/dropdown_secondary_label" layout_width="wrap_content" layout_height="wrap_content" singleLine="true" includeFontPadding="false" layout_weight="0" textAlignment="viewStart" layout_marginEnd="@dimen/autofill_dropdown_item_label_margin"/>
+        </LinearLayout>
+        <LinearLayout orientation="horizontal" layout_width="wrap_content" layout_height="wrap_content">
+            <TextView textAppearance="@style/TextAppearance.TextSmall.Secondary.Baseline" ellipsize="end" id="@+id/dropdown_sublabel" layout_width="wrap_content" layout_height="wrap_content" singleLine="true" includeFontPadding="false" layout_weight="1" textAlignment="viewStart" layout_marginStart="@dimen/autofill_dropdown_item_label_margin" layout_marginEnd="@dimen/autofill_dropdown_item_label_margin"/>
+            <TextView textAppearance="@style/TextAppearance.TextSmall.Secondary.Baseline" id="@+id/dropdown_secondary_sublabel" layout_width="wrap_content" layout_height="wrap_content" singleLine="true" includeFontPadding="false" layout_weight="0" textAlignment="viewStart" layout_marginEnd="@dimen/autofill_dropdown_item_label_margin"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

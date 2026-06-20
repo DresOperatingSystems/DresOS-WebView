@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item state_focused="true" state_enabled="true" drawable="@drawable/abc_textfield_search_activated_mtrl_alpha"/>
+    <item state_enabled="true" drawable="@drawable/abc_textfield_search_activated_mtrl_alpha" state_activated="true"/>
+    <item state_enabled="true" drawable="@drawable/abc_textfield_search_default_mtrl_alpha"/>
+    <item drawable="@drawable/abc_textfield_search_default_mtrl_alpha"/>
+</selector>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item state_pressed="true" color="@color/white_alpha_32"/>
+    <item state_focused="true" color="@color/white_alpha_24"/>
+    <item color="@color/white_alpha_8" state_hovered="true"/>
+    <item color="@android:color/transparent"/>
+</selector>

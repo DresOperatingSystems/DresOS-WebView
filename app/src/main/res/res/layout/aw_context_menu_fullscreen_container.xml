@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout id="@+id/aw_context_menu_layout" background="@android:color/transparent" layout_width="match_parent" layout_height="match_parent">
+    <ViewStub layout_gravity="center" id="@+id/aw_context_menu_stub" layout="@layout/aw_context_menu_dialog" layout_width="wrap_content" layout_height="wrap_content"/>
+</FrameLayout>

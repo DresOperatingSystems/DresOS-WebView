@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout orientation="vertical" id="@+id/topPanel" layout_width="match_parent" layout_height="wrap_content">
+    <LinearLayout gravity="start|center_vertical" orientation="horizontal" id="@+id/title_template" paddingLeft="?attr/dialogPreferredPadding" paddingTop="@dimen/abc_dialog_padding_top_material" paddingRight="?attr/dialogPreferredPadding" layout_width="match_parent" layout_height="wrap_content">
+        <ImageView id="@android:id/icon" layout_width="32dp" layout_height="32dp" layout_marginRight="8dp" src="@null" scaleType="fitCenter" layout_marginEnd="8dp"/>
+        <androidx.appcompat.widget.DialogTitle ellipsize="end" layout_gravity="start" id="@+id/alertTitle" layout_width="match_parent" layout_height="wrap_content" singleLine="true" textAlignment="viewStart" style="?android:attr/windowTitleStyle"/>
+    </LinearLayout>
+    <android.widget.Space id="@+id/titleDividerNoCustom" visibility="gone" layout_width="match_parent" layout_height="@dimen/abc_dialog_title_divider_material"/>
+</LinearLayout>

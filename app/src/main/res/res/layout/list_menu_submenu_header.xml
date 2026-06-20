@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout orientation="horizontal" background="?android:attr/listChoiceBackgroundIndicator" layout_width="match_parent" layout_height="wrap_content" contentDescription="@string/submenu_header_back" style="@style/ListMenuItemStyle">
+    <ImageView id="@+id/submenu_arrow" background="@android:color/transparent" src="@drawable/ic_arrow_back_24dp" scaleType="fitCenter" importantForAccessibility="no" style="@style/ListMenuItemIconStyle.Start"/>
+    <TextView ellipsize="end" id="@+id/menu_row_text" layout_width="0dp" layout_height="wrap_content" maxLines="1" layout_weight="1" style="@style/TextAppearance.DensityAdaptive.ListMenuItem.Bold"/>
+</LinearLayout>

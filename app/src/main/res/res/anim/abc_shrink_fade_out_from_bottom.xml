@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set shareInterpolator="false">
+    <scale interpolator="@android:anim/decelerate_interpolator" duration="@integer/abc_config_activityDefaultDur" pivotX="50%" pivotY="100%" fromXScale="1" toXScale="0.9" fromYScale="1" toYScale="0.9"/>
+    <alpha interpolator="@android:anim/decelerate_interpolator" duration="@integer/abc_config_activityShortDur" fromAlpha="1" toAlpha="0"/>
+</set>

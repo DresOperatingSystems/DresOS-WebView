@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <group id="@+id/crashes_menu">
+        <item id="@+id/options_menu_refresh" title="Refresh" showAsAction="ifRoom"/>
+    </group>
+</menu>

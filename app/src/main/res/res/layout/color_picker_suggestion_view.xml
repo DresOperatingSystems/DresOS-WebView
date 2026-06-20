@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout layout_gravity="center" background="@drawable/color_picker_border" padding="6dp" layout_width="@dimen/min_touch_target_size" layout_height="@dimen/min_touch_target_size">
+    <View id="@+id/color_picker_suggestion_color_view" background="@android:color/transparent" layout_width="match_parent" layout_height="match_parent"/>
+</FrameLayout>

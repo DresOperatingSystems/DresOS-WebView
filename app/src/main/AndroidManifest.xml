@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:n1="http://schemas.android.com/apk/res/android" n1:compileSdkVersion="36" n1:compileSdkVersionCodename="16" n1:isolatedSplits="true" n1:versionCode="763212001" n1:versionName="145.0.7632.120" package="org.dresos.webview" platformBuildVersionCode="36" platformBuildVersionName="16">
+    <uses-feature n1:name="android.hardware.touchscreen" n1:required="false"/>
+    <uses-feature n1:name="android.software.leanback" n1:required="false"/>
+    <uses-feature n1:glEsVersion="0x00030000"/>
+    <uses-permission n1:name="android.permission.INTERNET"/>
+    <uses-permission n1:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission n1:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission n1:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission n1:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"/>
+    <uses-permission n1:name="android.permission.POST_NOTIFICATIONS"/>
+    <application n1:icon="@drawable/icon_webview" n1:label="DresOS WebView" n1:multiArch="true" n1:name="org.chromium.android_webview.nonembedded.WebViewApkApplication">
+        <meta-data n1:name="com.android.webview.WebViewLibrary" n1:value="libwebviewchromium.so"/>
+        <service n1:enabled="false" n1:exported="true" n1:name="org.chromium.android_webview.services.StartupFeatureMetadataHolder">
+            <meta-data n1:name="STARTUP_FEATURE_SET_DATA_DIRECTORY_SUFFIX" n1:value="true"/>
+            <meta-data n1:name="STARTUP_FEATURE_SET_DIRECTORY_BASE_PATH" n1:value="true"/>
+            <meta-data n1:name="STARTUP_FEATURE_CONFIGURE_PARTITIONED_COOKIES" n1:value="true"/>
+            <meta-data n1:name="STARTUP_FEATURE_SET_UI_THREAD_STARTUP_MODE" n1:value="true"/>
+            <meta-data n1:name="STARTUP_FEATURE_SET_UI_THREAD_STARTUP_MODE_V2" n1:value="true"/>
+            <meta-data n1:name="STARTUP_FEATURE_SET_PROFILES_TO_LOAD" n1:value="true"/>
+        </service>
+        <activity n1:exported="true" n1:icon="@drawable/icon_webview" n1:label="WebView DevTools" n1:launchMode="singleTask" n1:name="org.chromium.android_webview.devui.MainActivity" n1:process=":webview_apk" n1:taskAffinity="org.dresos.webview.org.chromium.android_webview.devui" n1:theme="@style/Theme.DevUi.DayNight" n1:visibleToInstantApps="true" n1:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action n1:name="com.android.webview.SHOW_DEV_UI"/>
+                <category n1:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity-alias n1:enabled="false" n1:name="org.chromium.android_webview.SafeModeState" n1:targetActivity="org.chromium.android_webview.devui.MainActivity"/>
+        <activity-alias n1:enabled="false" n1:name="org.chromium.android_webview.devui.DeveloperModeState" n1:targetActivity="org.chromium.android_webview.devui.MainActivity"/>
+        <activity n1:exported="true" n1:label="@string/license_activity_title" n1:name="org.chromium.android_webview.nonembedded.LicenseActivity" n1:process=":webview_apk">
+            <intent-filter>
+                <action n1:name="android.settings.WEBVIEW_LICENSE"/>
+                <category n1:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data n1:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED" n1:value="true"/>
+        </activity>
+        <provider n1:authorities="org.dresos.webview.LicenseContentProvider" n1:exported="true" n1:grantUriPermissions="true" n1:name="org.chromium.android_webview.nonembedded.LicenseContentProvider" n1:process=":webview_apk"/>
+        <provider n1:authorities="org.dresos.webview.DeveloperModeContentProvider" n1:exported="true" n1:name="org.chromium.android_webview.services.DeveloperModeContentProvider" n1:process=":webview_service" n1:visibleToInstantApps="true"/>
+        <provider n1:authorities="org.dresos.webview.net_logs_provider" n1:exported="false" n1:grantUriPermissions="true" n1:name="androidx.core.content.FileProvider" n1:process=":webview_service" n1:visibleToInstantApps="true">
+            <meta-data n1:name="android.support.FILE_PROVIDER_PATHS" n1:resource="@xml/provider_paths"/>
+        </provider>
+        <provider n1:authorities="org.dresos.webview.SafeModeVariationsSeedContentProvider" n1:exported="true" n1:name="org.chromium.android_webview.services.SafeModeVariationsSeedContentProvider" n1:process=":webview_service" n1:visibleToInstantApps="true"/>
+        <provider n1:authorities="org.dresos.webview.SafeModeContentProvider" n1:exported="true" n1:name="org.chromium.android_webview.services.SafeModeContentProvider" n1:process=":webview_service" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:name="org.chromium.android_webview.services.VariationsSeedServer" n1:process=":webview_service"/>
+        <service n1:exported="false" n1:name="org.chromium.android_webview.services.AwVariationsSeedFetcher" n1:permission="android.permission.BIND_JOB_SERVICE" n1:process=":webview_service"/>
+        <service n1:exported="true" n1:name="org.chromium.android_webview.services.CrashReceiverService" n1:process=":webview_service"/>
+        <service n1:exported="true" n1:name="org.chromium.android_webview.services.AwMinidumpUploadJobService" n1:permission="android.permission.BIND_JOB_SERVICE" n1:process=":webview_service"/>
+        <service n1:exported="true" n1:foregroundServiceType="" n1:name="org.chromium.android_webview.services.DeveloperUiService" n1:process=":webview_service">
+            <property n1:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" n1:value="debugging"/>
+        </service>
+        <service n1:exported="true" n1:name="org.chromium.android_webview.services.SafeModeService" n1:process=":webview_service"/>
+        <service n1:exported="true" n1:name="org.chromium.android_webview.services.AwNetLogService" n1:process=":webview_service"/>
+        <service n1:exported="true" n1:name="org.chromium.android_webview.services.MetricsBridgeService" n1:process=":webview_service" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:name="org.chromium.android_webview.services.MetricsUploadService" n1:process=":webview_service" n1:visibleToInstantApps="true"/>
+        <service n1:exported="false" n1:name="org.chromium.android_webview.nonembedded.AwComponentUpdateService" n1:permission="android.permission.BIND_JOB_SERVICE" n1:process=":webview_apk"/>
+        <service n1:exported="true" n1:name="org.chromium.android_webview.services.ComponentsProviderService" n1:process=":webview_service" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.android_webview.js_sandbox.service.JsSandboxService0" n1:process=":js_sandboxed_process0" n1:visibleToInstantApps="true"/>
+        <meta-data n1:name="org.chromium.content.browser.NUM_SANDBOXED_SERVICES" n1:value="40"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService0" n1:process=":sandboxed_process0" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService1" n1:process=":sandboxed_process1" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService2" n1:process=":sandboxed_process2" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService3" n1:process=":sandboxed_process3" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService4" n1:process=":sandboxed_process4" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService5" n1:process=":sandboxed_process5" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService6" n1:process=":sandboxed_process6" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService7" n1:process=":sandboxed_process7" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService8" n1:process=":sandboxed_process8" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService9" n1:process=":sandboxed_process9" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService10" n1:process=":sandboxed_process10" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService11" n1:process=":sandboxed_process11" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService12" n1:process=":sandboxed_process12" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService13" n1:process=":sandboxed_process13" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService14" n1:process=":sandboxed_process14" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService15" n1:process=":sandboxed_process15" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService16" n1:process=":sandboxed_process16" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService17" n1:process=":sandboxed_process17" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService18" n1:process=":sandboxed_process18" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService19" n1:process=":sandboxed_process19" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService20" n1:process=":sandboxed_process20" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService21" n1:process=":sandboxed_process21" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService22" n1:process=":sandboxed_process22" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService23" n1:process=":sandboxed_process23" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService24" n1:process=":sandboxed_process24" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService25" n1:process=":sandboxed_process25" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService26" n1:process=":sandboxed_process26" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService27" n1:process=":sandboxed_process27" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService28" n1:process=":sandboxed_process28" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService29" n1:process=":sandboxed_process29" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService30" n1:process=":sandboxed_process30" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService31" n1:process=":sandboxed_process31" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService32" n1:process=":sandboxed_process32" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService33" n1:process=":sandboxed_process33" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService34" n1:process=":sandboxed_process34" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService35" n1:process=":sandboxed_process35" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService36" n1:process=":sandboxed_process36" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService37" n1:process=":sandboxed_process37" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService38" n1:process=":sandboxed_process38" n1:visibleToInstantApps="true"/>
+        <service n1:exported="true" n1:externalService="true" n1:isolatedProcess="true" n1:name="org.chromium.content.app.SandboxedProcessService39" n1:process=":sandboxed_process39" n1:visibleToInstantApps="true"/>
+        <meta-data n1:name="org.chromium.content.browser.NUM_PRIVILEGED_SERVICES" n1:value="0"/>
+        <uses-library n1:name="android.test.base" n1:required="false"/>
+        <meta-data n1:name="PIN_SHARED_LIBS_FIRST" n1:value="false"/>
+        <uses-library n1:name="androidx.window.extensions" n1:required="false"/>
+    </application>
+</manifest>

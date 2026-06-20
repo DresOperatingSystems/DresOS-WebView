@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item state_enabled="false" color="?android:attr/colorForeground" alpha="0.1"/>
+    <item state_checked="true" color="?attr/colorControlActivated" alpha="0.3"/>
+    <item color="?android:attr/colorForeground" alpha="0.3"/>
+</selector>

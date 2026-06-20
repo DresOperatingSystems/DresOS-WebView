@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout orientation="vertical" paddingTop="2dp" paddingBottom="2dp" layout_width="match_parent" layout_height="wrap_content">
+    <LinearLayout orientation="vertical" layout_width="match_parent" layout_height="wrap_content" paddingStart="?android:attr/expandableListPreferredItemPaddingLeft" paddingEnd="100dp">
+        <LinearLayout orientation="horizontal" layout_width="match_parent" layout_height="wrap_content">
+            <LinearLayout orientation="horizontal" layout_width="0dp" layout_height="wrap_content" layout_weight="0.7">
+                <include id="@+id/upload_status" layout="@layout/two_line_sublist_item"/>
+            </LinearLayout>
+            <ImageButton id="@+id/crash_hide_button" background="?android:attr/selectableItemBackground" paddingTop="4dp" paddingBottom="4dp" layout_width="wrap_content" layout_height="wrap_content" src="@drawable/ic_delete" contentDescription="Hide Crash Button"/>
+        </LinearLayout>
+        <Button id="@+id/crash_report_button" paddingTop="8dp" paddingBottom="8dp" layout_width="match_parent" layout_height="wrap_content" text="File bug report" textAllCaps="false"/>
+        <Button id="@+id/crash_upload_button" paddingTop="8dp" paddingBottom="8dp" layout_width="match_parent" layout_height="wrap_content" text="Upload this crash report" textAllCaps="false"/>
+    </LinearLayout>
+    <View background="?android:attr/listDivider" layout_width="match_parent" layout_height="1dp" layout_marginTop="16dp"/>
+</LinearLayout>

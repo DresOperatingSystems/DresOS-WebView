@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item state_focused="true" drawable="@drawable/abc_btn_default_mtrl_shape"/>
+    <item state_pressed="true" drawable="@drawable/abc_btn_default_mtrl_shape"/>
+    <item drawable="@android:color/transparent"/>
+</selector>

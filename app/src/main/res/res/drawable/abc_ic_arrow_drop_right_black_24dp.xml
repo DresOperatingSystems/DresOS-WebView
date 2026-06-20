@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector tint="?attr/colorControlNormal" height="24dp" width="24dp" autoMirrored="true" viewportWidth="24" viewportHeight="24">
+    <group name="arrow" pivotX="12" pivotY="12" rotation="90">
+        <path fillColor="@android:color/black" pathData="M7,14 L12,9 L17,14 L7,14 Z"/>
+        <path pathData="M0,0 L24,0 L24,24 L0,24 L0,0 Z"/>
+    </group>
+</vector>

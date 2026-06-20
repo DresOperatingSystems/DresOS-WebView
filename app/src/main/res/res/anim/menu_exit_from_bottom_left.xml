@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set shareInterpolator="false">
+    <scale interpolator="@anim/emphasized" duration="150" pivotX="@fraction/menu_start_animation_pivot_x" pivotY="100%" fromXScale="1" toXScale="0.5" fromYScale="1" toYScale="0.5"/>
+    <alpha interpolator="@anim/emphasized" duration="150" fromAlpha="1" toAlpha="0"/>
+</set>

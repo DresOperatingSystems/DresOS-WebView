@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout orientation="vertical" layout_width="match_parent" layout_height="wrap_content">
+    <ListView id="@+id/suggestionContainer" layout_width="match_parent" layout_height="wrap_content"/>
+</LinearLayout>

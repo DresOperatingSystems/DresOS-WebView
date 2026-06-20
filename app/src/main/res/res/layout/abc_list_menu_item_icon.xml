@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView layout_gravity="center_vertical" id="@+id/icon" duplicateParentState="true" layout_width="wrap_content" layout_height="wrap_content" layout_marginLeft="8dp" layout_marginTop="8dp" layout_marginRight="-8dp" layout_marginBottom="8dp" scaleType="centerInside" layout_marginStart="8dp" layout_marginEnd="-8dp"/>

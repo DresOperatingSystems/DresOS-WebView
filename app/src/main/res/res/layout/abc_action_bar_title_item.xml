@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout orientation="vertical" layout_width="wrap_content" layout_height="wrap_content" style="@style/RtlOverlay.Widget.AppCompat.ActionBar.TitleItem">
+    <TextView ellipsize="end" id="@+id/action_bar_title" layout_width="wrap_content" layout_height="wrap_content" singleLine="true"/>
+    <TextView ellipsize="end" id="@+id/action_bar_subtitle" visibility="gone" layout_width="wrap_content" layout_height="wrap_content" layout_marginTop="@dimen/abc_action_bar_subtitle_top_margin_material" singleLine="true"/>
+</LinearLayout>

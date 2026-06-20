@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector drawable="@drawable/res_0x7f090000_transition_expand_less_expand_more_black_24dp__0">
+    <target name="arrow" animation="@drawable/res_0x7f090001_transition_expand_less_expand_more_black_24dp__1"/>
+</animated-vector>

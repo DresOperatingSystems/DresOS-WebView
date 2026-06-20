@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set>
+    <set ordering="sequentially">
+        <objectAnimator interpolator="@android:anim/linear_interpolator" duration="50" valueFrom="0" valueTo="0" propertyName="alpha"/>
+        <objectAnimator interpolator="@android:anim/linear_interpolator" duration="50" valueFrom="0" valueTo="1" propertyName="alpha"/>
+    </set>
+    <objectAnimator interpolator="@anim/fragment_fast_out_extra_slow_in" duration="300" valueFrom="0.85" valueTo="1" propertyName="scaleX"/>
+    <objectAnimator interpolator="@anim/fragment_fast_out_extra_slow_in" duration="300" valueFrom="0.85" valueTo="1" propertyName="scaleY"/>
+</set>

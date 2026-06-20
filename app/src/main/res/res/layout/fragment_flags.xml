@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout orientation="vertical" id="@+id/fragment_flags" layout_width="match_parent" layout_height="match_parent" paddingStart="8dp" paddingEnd="8dp">
+    <RelativeLayout orientation="horizontal" layout_width="match_parent" layout_height="wrap_content" layout_marginTop="8dp" layout_marginBottom="8dp">
+        <EditText textAppearance="?android:attr/textAppearanceMedium" id="@+id/flag_search_bar" layout_width="match_parent" layout_height="wrap_content" hint="Search flags" singleLine="true" drawablePadding="4dp" inputType="textFilter" imeOptions="actionDone" drawableStart="@drawable/ic_search_24dp" layout_toStartOf="@+id/reset_flags_button" layout_alignParentStart="true" drawableTint="?android:attr/textColorPrimary"/>
+        <Button textAppearance="?android:attr/textAppearanceMedium" id="@+id/reset_flags_button" layout_width="wrap_content" layout_height="wrap_content" text="Reset flags" layout_marginStart="8dp" layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <View background="?android:attr/listDivider" layout_width="match_parent" layout_height="1dp"/>
+    <ListView id="@+id/flags_list" layout_width="match_parent" layout_height="match_parent"/>
+</LinearLayout>

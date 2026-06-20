@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout gravity="center_vertical" background="?android:attr/listChoiceBackgroundIndicator" layout_width="match_parent" layout_height="wrap_content" style="@style/ListMenuItemStyle">
+    <ImageView id="@+id/menu_item_icon" visibility="gone" importantForAccessibility="no" style="@style/ListMenuItemIconStyle.Start"/>
+    <LinearLayout gravity="center_vertical" orientation="vertical" layout_width="0dp" layout_height="wrap_content" layout_weight="1">
+        <TextView textAppearance="@style/TextAppearance.DensityAdaptive.ListMenuItem" gravity="center_vertical" id="@+id/menu_item_text" layout_width="match_parent" layout_height="wrap_content" singleLine="false" textAlignment="viewStart"/>
+        <TextView textAppearance="@style/TextAppearance.ListMenuItem.Subtitle" id="@+id/menu_item_subtitle" visibility="gone" layout_width="match_parent" layout_height="wrap_content" textAlignment="viewStart"/>
+    </LinearLayout>
+    <ImageView id="@+id/menu_item_end_icon" visibility="gone" importantForAccessibility="no" style="@style/ListMenuItemIconStyle"/>
+</LinearLayout>

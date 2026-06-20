@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout layout_width="wrap_content" layout_height="wrap_content">
+    <TextView textAppearance="@android:style/TextAppearance.Medium" id="@+id/text" layout_width="match_parent" layout_height="wrap_content" textIsSelectable="false" layout_marginStart="@dimen/color_picker_gradient_margin" layout_marginEnd="@dimen/color_picker_gradient_margin"/>
+    <FrameLayout id="@+id/gradient_border" background="@drawable/color_picker_border" padding="1dp" layout_width="match_parent" layout_height="50dp" layout_marginTop="3dp" layout_below="@+id/text" layout_marginStart="@dimen/color_picker_gradient_margin" layout_marginEnd="@dimen/color_picker_gradient_margin">
+        <View id="@+id/gradient" layout_width="match_parent" layout_height="match_parent"/>
+    </FrameLayout>
+    <SeekBar id="@+id/seek_bar" layout_width="match_parent" layout_height="75dp" progressDrawable="@android:color/transparent" thumb="@drawable/color_picker_advanced_select_handle" layout_below="@+id/text" translationY="25dp"/>
+</RelativeLayout>

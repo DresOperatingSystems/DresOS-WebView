@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set>
+    <set ordering="sequentially">
+        <objectAnimator interpolator="@interpolator/btn_checkbox_checked_mtrl_animation_interpolator_1" duration="166" valueFrom="0.2" valueTo="0.18" propertyName="scaleX"/>
+        <objectAnimator interpolator="@interpolator/btn_checkbox_checked_mtrl_animation_interpolator_1" duration="333" valueFrom="0.18" valueTo="0.2" propertyName="scaleX"/>
+    </set>
+    <set ordering="sequentially">
+        <objectAnimator interpolator="@interpolator/btn_checkbox_checked_mtrl_animation_interpolator_1" duration="166" valueFrom="0.2" valueTo="0.18" propertyName="scaleY"/>
+        <objectAnimator interpolator="@interpolator/btn_checkbox_checked_mtrl_animation_interpolator_1" duration="333" valueFrom="0.18" valueTo="0.2" propertyName="scaleY"/>
+    </set>
+</set>

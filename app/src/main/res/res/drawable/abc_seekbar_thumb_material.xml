@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector constantSize="true">
+    <item state_enabled="false" state_pressed="true">
+        <bitmap gravity="center" src="@drawable/abc_scrubber_control_off_mtrl_alpha"/>
+    </item>
+    <item state_enabled="false">
+        <bitmap gravity="center" src="@drawable/abc_scrubber_control_off_mtrl_alpha"/>
+    </item>
+    <item state_pressed="true">
+        <bitmap gravity="center" src="@drawable/abc_scrubber_control_to_pressed_mtrl_005"/>
+    </item>
+    <item>
+        <bitmap gravity="center" src="@drawable/abc_scrubber_control_to_pressed_mtrl_000"/>
+    </item>
+</selector>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout id="@+id/notification_background" layout_width="match_parent" layout_height="wrap_content">
+    <include layout_width="@dimen/notification_large_icon_width" layout_height="@dimen/notification_large_icon_height" layout="@layout/notification_template_icon_group"/>
+    <LinearLayout layout_gravity="top" orientation="vertical" layout_width="match_parent" layout_height="wrap_content" layout_marginStart="@dimen/notification_large_icon_width">
+        <LinearLayout orientation="horizontal" id="@+id/notification_main_column_container" layout_width="match_parent" layout_height="wrap_content" minHeight="@dimen/notification_large_icon_height">
+            <FrameLayout id="@+id/notification_main_column" layout_width="match_parent" layout_height="wrap_content" layout_marginBottom="8dp" layout_weight="1" layout_marginEnd="8dp"/>
+            <FrameLayout id="@+id/right_side" paddingTop="@dimen/notification_right_side_padding_top" layout_width="wrap_content" layout_height="wrap_content" layout_marginEnd="8dp">
+                <ViewStub layout_gravity="end|top" id="@+id/time" visibility="gone" layout="@layout/notification_template_part_time" layout_width="wrap_content" layout_height="wrap_content"/>
+                <ViewStub layout_gravity="end|top" id="@+id/chronometer" visibility="gone" layout="@layout/notification_template_part_chronometer" layout_width="wrap_content" layout_height="wrap_content"/>
+                <TextView textAppearance="@style/TextAppearance.Compat.Notification.Info" layout_gravity="end|bottom" id="@+id/info" layout_width="wrap_content" layout_height="wrap_content" layout_marginTop="20dp" singleLine="true"/>
+            </FrameLayout>
+        </LinearLayout>
+        <ImageView id="@+id/action_divider" background="#29000000" visibility="gone" layout_width="match_parent" layout_height="1dp"/>
+        <LinearLayout orientation="horizontal" id="@+id/actions" visibility="gone" layout_width="match_parent" layout_height="wrap_content" layout_marginStart="-8dp"/>
+    </LinearLayout>
+</FrameLayout>

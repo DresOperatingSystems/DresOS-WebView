@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<alpha interpolator="@android:interpolator/accelerate_quad" duration="@integer/config_tooltipAnimTime" fromAlpha="1" toAlpha="0"/>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View id="@+id/divider_view" importantForAccessibility="no" style="@style/HorizontalDivider"/>

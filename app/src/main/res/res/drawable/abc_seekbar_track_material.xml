@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item id="@android:id/background" drawable="@drawable/abc_scrubber_track_mtrl_alpha"/>
+    <item id="@android:id/secondaryProgress">
+        <scale scaleWidth="100%">
+            <selector>
+                <item state_enabled="false">
+                    <color color="@android:color/transparent"/>
+                </item>
+                <item drawable="@drawable/abc_scrubber_primary_mtrl_alpha"/>
+            </selector>
+        </scale>
+    </item>
+    <item id="@android:id/progress">
+        <scale scaleWidth="100%">
+            <selector>
+                <item state_enabled="false">
+                    <color color="@android:color/transparent"/>
+                </item>
+                <item drawable="@drawable/abc_scrubber_primary_mtrl_alpha"/>
+            </selector>
+        </scale>
+    </item>
+</layer-list>

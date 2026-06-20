@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector drawable="@drawable/btn_radio_on_mtrl">
+    <target name="ring_outer" animation="@anim/btn_radio_to_off_mtrl_ring_outer_animation"/>
+    <target name="ring_outer_path" animation="@anim/btn_radio_to_off_mtrl_ring_outer_path_animation"/>
+    <target name="dot_group" animation="@anim/btn_radio_to_off_mtrl_dot_group_animation"/>
+</animated-vector>

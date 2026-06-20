@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView textAppearance="@style/TextAppearance.TextSmall.Primary.Baseline" gravity="center" id="@+id/toast_text" background="@drawable/custom_toast_background" minHeight="44dp"/>

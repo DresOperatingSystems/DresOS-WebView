@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.FitWindowsFrameLayout id="@+id/action_bar_root" fitsSystemWindows="true" layout_width="match_parent" layout_height="match_parent">
+    <include layout="@layout/abc_screen_content_include"/>
+    <androidx.appcompat.widget.ViewStubCompat id="@+id/action_mode_bar_stub" layout="@layout/abc_action_mode_bar" inflatedId="@+id/action_mode_bar" layout_width="match_parent" layout_height="wrap_content"/>
+</androidx.appcompat.widget.FitWindowsFrameLayout>

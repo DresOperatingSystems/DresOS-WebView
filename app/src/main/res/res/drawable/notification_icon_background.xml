@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape shape="oval">
+    <solid color="@color/notification_icon_bg_color"/>
+</shape>

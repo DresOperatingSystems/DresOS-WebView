@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item state_enabled="true" state_checked="true" color="?android:attr/colorControlActivated" alpha="@dimen/highlight_alpha_material_colored"/>
+    <item color="?android:attr/colorControlHighlight"/>
+</selector>

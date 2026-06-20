@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape shape="rectangle">
+    <corners radius="@dimen/list_menu_bg_corner_radius"/>
+    <solid color="@color/menu_bg_color_baseline"/>
+    <padding top="@dimen/list_menu_vertical_padding" bottom="@dimen/list_menu_vertical_padding"/>
+</shape>

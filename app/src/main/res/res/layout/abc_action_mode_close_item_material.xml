@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView id="@+id/action_mode_close_button" paddingLeft="12dp" focusable="true" clickable="true" layout_width="wrap_content" layout_height="match_parent" layout_marginRight="16dp" contentDescription="?attr/actionModeCloseContentDescription" paddingStart="12dp" layout_marginEnd="16dp" srcCompat="?attr/actionModeCloseDrawable" style="?attr/actionModeCloseButtonStyle"/>

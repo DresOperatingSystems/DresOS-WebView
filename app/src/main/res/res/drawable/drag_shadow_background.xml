@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape shape="rectangle">
+    <stroke width="@dimen/drag_shadow_border_size" color="@color/baseline_neutral_variant_90_alpha_20"/>
+    <corners topLeftRadius="@dimen/drag_shadow_border_corner_radius" topRightRadius="@dimen/drag_shadow_border_corner_radius" bottomLeftRadius="@dimen/drag_shadow_border_corner_radius" bottomRightRadius="@dimen/drag_shadow_border_corner_radius"/>
+</shape>

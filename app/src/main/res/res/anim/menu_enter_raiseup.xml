@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set shareInterpolator="false">
+    <scale interpolator="@anim/emphasized" duration="250" pivotX="50%" pivotY="95%" fromXScale="1" toXScale="1" fromYScale="0" toYScale="1"/>
+    <alpha interpolator="@anim/emphasized" duration="250" fromAlpha="0" toAlpha="1"/>
+    <translate interpolator="@anim/emphasized" duration="250" fromYDelta="@dimen/menu_negative_software_vertical_offset" toYDelta="0"/>
+</set>

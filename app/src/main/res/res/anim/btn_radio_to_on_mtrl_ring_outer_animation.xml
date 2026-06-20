@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set>
+    <set ordering="sequentially">
+        <objectAnimator interpolator="@interpolator/fast_out_slow_in" duration="166" valueFrom="1" valueTo="0.5" valueType="floatType" propertyName="scaleX"/>
+        <objectAnimator interpolator="@interpolator/fast_out_slow_in" duration="16" valueFrom="0.5" valueTo="0.9" valueType="floatType" propertyName="scaleX"/>
+        <objectAnimator interpolator="@interpolator/fast_out_slow_in" duration="316" valueFrom="0.9" valueTo="1" valueType="floatType" propertyName="scaleX"/>
+    </set>
+    <set ordering="sequentially">
+        <objectAnimator interpolator="@interpolator/fast_out_slow_in" duration="166" valueFrom="1" valueTo="0.5" valueType="floatType" propertyName="scaleY"/>
+        <objectAnimator interpolator="@interpolator/fast_out_slow_in" duration="16" valueFrom="0.5" valueTo="0.9" valueType="floatType" propertyName="scaleY"/>
+        <objectAnimator interpolator="@interpolator/fast_out_slow_in" duration="316" valueFrom="0.9" valueTo="1" valueType="floatType" propertyName="scaleY"/>
+    </set>
+</set>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout orientation="horizontal" id="@+id/search_bar" layout_width="match_parent" layout_height="match_parent">
+    <TextView textAppearance="?android:attr/textAppearanceMedium" textColor="?android:attr/textColorPrimary" gravity="center_vertical" id="@+id/search_badge" visibility="gone" layout_width="wrap_content" layout_height="match_parent" layout_marginBottom="2dp" drawablePadding="0dp"/>
+    <ImageView layout_gravity="center_vertical" id="@+id/search_button" focusable="true" layout_width="wrap_content" layout_height="match_parent" contentDescription="@string/abc_searchview_description_search" style="?attr/actionButtonStyle"/>
+    <LinearLayout orientation="horizontal" id="@+id/search_edit_frame" layout_width="wrap_content" layout_height="match_parent" layout_marginLeft="8dp" layout_marginRight="8dp" layout_weight="1" layoutDirection="locale">
+        <ImageView layout_gravity="center_vertical" id="@+id/search_mag_icon" visibility="gone" layout_width="@dimen/abc_dropdownitem_icon_width" layout_height="wrap_content" scaleType="centerInside" style="@style/RtlOverlay.Widget.AppCompat.SearchView.MagIcon"/>
+        <LinearLayout layout_gravity="center_vertical" orientation="horizontal" id="@+id/search_plate" layout_width="wrap_content" layout_height="match_parent" layout_weight="1">
+            <view ellipsize="end" layout_gravity="center_vertical" id="@+id/search_src_text" background="@null" paddingLeft="@dimen/abc_dropdownitem_text_padding_left" paddingRight="@dimen/abc_dropdownitem_text_padding_right" layout_width="0dp" layout_height="36dp" singleLine="true" layout_weight="1" inputType="textNoSuggestions" dropDownAnchor="@+id/search_edit_frame" imeOptions="actionSearch" dropDownHeight="wrap_content" dropDownHorizontalOffset="0dp" dropDownVerticalOffset="0dp" class="androidx.appcompat.widget.SearchView$SearchAutoComplete"/>
+            <ImageView layout_gravity="center_vertical" id="@+id/search_close_btn" background="?attr/selectableItemBackgroundBorderless" paddingLeft="8dp" paddingRight="8dp" focusable="true" layout_width="wrap_content" layout_height="match_parent" contentDescription="@string/abc_searchview_description_clear"/>
+        </LinearLayout>
+        <LinearLayout orientation="horizontal" id="@+id/submit_area" layout_width="wrap_content" layout_height="match_parent">
+            <ImageView layout_gravity="center_vertical" id="@+id/search_go_btn" background="?attr/selectableItemBackgroundBorderless" paddingLeft="16dp" paddingRight="16dp" focusable="true" visibility="gone" layout_width="wrap_content" layout_height="match_parent" contentDescription="@string/abc_searchview_description_submit"/>
+            <ImageView layout_gravity="center_vertical" id="@+id/search_voice_btn" background="?attr/selectableItemBackgroundBorderless" paddingLeft="16dp" paddingRight="16dp" focusable="true" visibility="gone" layout_width="wrap_content" layout_height="match_parent" contentDescription="@string/abc_searchview_description_voice"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

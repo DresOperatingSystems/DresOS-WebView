@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item id="@+id/net_log_menu_share" title="Share"/>
+    <item id="@+id/net_log_menu_delete" title="Delete"/>
+</menu>

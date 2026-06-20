@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view layout_gravity="center" id="@+id/activity_chooser_view_content" layout_width="wrap_content" layout_height="match_parent" class="androidx.appcompat.widget.ActivityChooserView$InnerLayout" style="?attr/activityChooserViewStyle">
+    <FrameLayout layout_gravity="center" id="@+id/expand_activities_button" background="?attr/actionBarItemBackground" paddingLeft="12dp" paddingTop="2dp" paddingRight="12dp" paddingBottom="2dp" focusable="true" addStatesFromChildren="true" layout_width="wrap_content" layout_height="match_parent">
+        <ImageView layout_gravity="center" id="@+id/image" layout_width="32dp" layout_height="32dp" scaleType="fitCenter" adjustViewBounds="true"/>
+    </FrameLayout>
+    <FrameLayout layout_gravity="center" id="@+id/default_activity_button" background="?attr/actionBarItemBackground" paddingLeft="12dp" paddingTop="2dp" paddingRight="12dp" paddingBottom="2dp" focusable="true" addStatesFromChildren="true" layout_width="wrap_content" layout_height="match_parent">
+        <ImageView layout_gravity="center" id="@+id/image" layout_width="32dp" layout_height="32dp" scaleType="fitCenter" adjustViewBounds="true"/>
+    </FrameLayout>
+</view>

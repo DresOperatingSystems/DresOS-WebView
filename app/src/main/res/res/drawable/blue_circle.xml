@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape id="@+id/blue_circle" shape="oval">
+    <solid color="@color/blue"/>
+    <size height="10dp" width="10dp"/>
+</shape>

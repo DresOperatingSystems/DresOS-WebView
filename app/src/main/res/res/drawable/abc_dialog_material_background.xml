@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset insetLeft="16dp" insetRight="16dp" insetTop="16dp" insetBottom="16dp">
+    <shape shape="rectangle">
+        <corners radius="?attr/dialogCornerRadius"/>
+        <solid color="@android:color/white"/>
+    </shape>
+</inset>

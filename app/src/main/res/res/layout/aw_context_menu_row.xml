@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout orientation="horizontal" paddingTop="@dimen/context_menu_list_vertical_padding" paddingBottom="@dimen/context_menu_list_vertical_padding" layout_width="match_parent" layout_height="wrap_content" paddingStart="@dimen/context_menu_list_lateral_padding" paddingEnd="@dimen/context_menu_list_lateral_padding">
+    <ImageView id="@+id/menu_row_icon" visibility="gone" layout_width="@dimen/list_menu_item_icon_size" layout_height="@dimen/list_menu_item_icon_size" scaleType="fitCenter" importantForAccessibility="no" layout_marginEnd="@dimen/list_menu_item_start_icon_end_margin"/>
+    <TextView textAppearance="@style/TextAppearance.TextLarge.Primary.Baseline" id="@+id/menu_row_text" layout_width="match_parent" layout_height="wrap_content"/>
+</LinearLayout>

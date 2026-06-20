@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView paddingTop="10dp" paddingBottom="10dp" layout_width="match_parent" layout_height="wrap_content" fadeScrollbars="false" paddingStart="24dp" paddingEnd="24dp">
+    <LinearLayout orientation="vertical" layout_width="match_parent" layout_height="wrap_content">
+        <org.chromium.components.embedder_support.delegate.ColorPickerSuggestionsView gravity="center" id="@+id/color_picker_suggestions_view" visibility="gone" layout_width="match_parent" layout_height="wrap_content" horizontalSpacing="8dp" verticalSpacing="8dp"/>
+        <org.chromium.components.embedder_support.delegate.ColorPickerAdvanced id="@+id/color_picker_custom_view" visibility="gone" layout_width="match_parent" layout_height="wrap_content"/>
+        <RelativeLayout layout_width="match_parent" layout_height="wrap_content" layout_marginTop="10dp">
+            <LinearLayout layout_width="match_parent" layout_height="wrap_content" layout_marginEnd="20dp" layout_toStartOf="@+id/color_picker_dialog_chosen_color_container">
+                <org.chromium.ui.widget.ButtonCompat gravity="center_vertical" layout_gravity="start" id="@+id/color_picker_view_switcher_button" layout_width="wrap_content" layout_height="wrap_content" layout_marginStart="11dp" style="@style/TextButton"/>
+            </LinearLayout>
+            <LinearLayout gravity="center_vertical" orientation="horizontal" id="@+id/color_picker_dialog_chosen_color_container" layout_width="wrap_content" layout_height="wrap_content" layout_alignParentEnd="true">
+                <TextView layout_width="wrap_content" layout_height="wrap_content" maxWidth="150dp" text="@string/color_picker_label_chosen_color" importantForAccessibility="no" style="@style/TextAppearance.TextLarge.Primary.Baseline"/>
+                <FrameLayout layout_gravity="center" background="@drawable/color_picker_border" padding="6dp" layout_width="48dp" layout_height="48dp" importantForAccessibility="noHideDescendants" layout_marginStart="8dp" layout_marginEnd="13dp">
+                    <View id="@+id/color_picker_dialog_chosen_color_view" background="@android:color/transparent" layout_width="match_parent" layout_height="match_parent"/>
+                </FrameLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

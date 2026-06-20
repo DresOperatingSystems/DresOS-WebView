@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector height="24dp" width="24dp" viewportWidth="24" viewportHeight="24">
+    <path name="arrow" fillColor="#000000" pathData="M12,8L6,14L7.41,15.41L12,10.83L16.59,15.41L18,14z"/>
+</vector>

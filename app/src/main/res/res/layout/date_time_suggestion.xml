@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout gravity="center_vertical" orientation="horizontal" id="@+id/date_time_suggestion" layout_width="match_parent" layout_height="wrap_content" minHeight="44dp">
+    <TextView textSize="18sp" ellipsize="end" id="@+id/date_time_suggestion_value" layout_width="wrap_content" layout_height="wrap_content" singleLine="true" layout_marginStart="10dp" layout_marginEnd="10dp"/>
+    <TextView textSize="18sp" textColor="#8b8b8b" ellipsize="end" gravity="end" id="@+id/date_time_suggestion_label" layout_width="0dp" layout_height="wrap_content" singleLine="true" layout_weight="1" layout_marginEnd="10dp"/>
+</LinearLayout>

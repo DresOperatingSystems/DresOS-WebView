@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector tint="?android:attr/colorControlNormal" height="24dp" width="24dp" autoMirrored="true" viewportWidth="24" viewportHeight="24">
+    <path fillColor="@android:color/white" pathData="M10,6L8.59,7.41 13.17,12l-4.58,4.59L10,18l6,-6 -6,-6z"/>
+</vector>

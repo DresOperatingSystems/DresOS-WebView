@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout orientation="vertical" id="@+id/list_item" background="?attr/selectableItemBackground" paddingLeft="16dp" paddingRight="16dp" layout_width="match_parent" layout_height="?attr/dropdownListPreferredItemHeight" minWidth="196dp">
+    <LinearLayout duplicateParentState="true" layout_width="wrap_content" layout_height="match_parent">
+        <ImageView layout_gravity="center_vertical" id="@+id/icon" duplicateParentState="true" layout_width="32dp" layout_height="32dp" layout_marginRight="8dp"/>
+        <TextView textAppearance="?attr/textAppearanceLargePopupMenu" ellipsize="marquee" layout_gravity="center_vertical" id="@+id/title" fadingEdge="horizontal" duplicateParentState="true" layout_width="wrap_content" layout_height="wrap_content" singleLine="true"/>
+    </LinearLayout>
+</LinearLayout>

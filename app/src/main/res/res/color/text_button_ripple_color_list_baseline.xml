@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item state_pressed="true" color="@color/ripple_color_blue" alpha="@dimen/default_pressed_alpha"/>
+    <item state_focused="true" color="@color/ripple_color_blue" alpha="@dimen/default_focused_hovered_alpha" state_hovered="true"/>
+    <item state_focused="true" color="@color/ripple_color_blue" alpha="@dimen/default_focused_alpha"/>
+    <item color="@color/ripple_color_blue" alpha="@dimen/default_hovered_alpha" state_hovered="true"/>
+    <item color="@android:color/transparent"/>
+</selector>

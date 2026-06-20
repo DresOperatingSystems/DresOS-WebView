@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator duration="250" valueFrom="M12,8L6,14L7.41,15.41L12,10.83L16.59,15.41L18,14z" valueTo="M12,13.17L7.41,8.59L6,10L12,16L18,10L16.59,8.59z" valueType="pathType" propertyName="pathData"/>

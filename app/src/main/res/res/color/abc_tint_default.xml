@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item state_enabled="false" color="?attr/colorControlNormal" alpha="?android:attr/disabledAlpha"/>
+    <item state_focused="true" color="?attr/colorControlActivated"/>
+    <item state_pressed="true" color="?attr/colorControlActivated"/>
+    <item color="?attr/colorControlActivated" state_activated="true"/>
+    <item state_selected="true" color="?attr/colorControlActivated"/>
+    <item state_checked="true" color="?attr/colorControlActivated"/>
+    <item color="?attr/colorControlNormal"/>
+</selector>

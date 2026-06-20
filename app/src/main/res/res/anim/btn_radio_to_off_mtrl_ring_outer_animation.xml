@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set>
+    <set ordering="sequentially">
+        <objectAnimator interpolator="@interpolator/fast_out_slow_in" duration="183" valueFrom="1" valueTo="0.9" valueType="floatType" propertyName="scaleX"/>
+        <objectAnimator interpolator="@interpolator/btn_radio_to_off_mtrl_animation_interpolator_0" duration="16" valueFrom="0.9" valueTo="0.5" valueType="floatType" propertyName="scaleX"/>
+        <objectAnimator interpolator="@interpolator/btn_radio_to_off_mtrl_animation_interpolator_0" duration="300" valueFrom="0.5" valueTo="1" valueType="floatType" propertyName="scaleX"/>
+    </set>
+    <set ordering="sequentially">
+        <objectAnimator interpolator="@interpolator/fast_out_slow_in" duration="183" valueFrom="1" valueTo="0.9" valueType="floatType" propertyName="scaleY"/>
+        <objectAnimator interpolator="@interpolator/btn_radio_to_off_mtrl_animation_interpolator_0" duration="16" valueFrom="0.9" valueTo="0.5" valueType="floatType" propertyName="scaleY"/>
+        <objectAnimator interpolator="@interpolator/btn_radio_to_off_mtrl_animation_interpolator_0" duration="300" valueFrom="0.5" valueTo="1" valueType="floatType" propertyName="scaleY"/>
+    </set>
+</set>

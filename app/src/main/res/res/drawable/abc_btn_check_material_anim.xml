@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector>
+    <item state_checked="true" id="@+id/checked" drawable="@drawable/btn_checkbox_checked_mtrl"/>
+    <item id="@+id/unchecked" drawable="@drawable/btn_checkbox_unchecked_mtrl"/>
+    <transition drawable="@drawable/btn_checkbox_unchecked_to_checked_mtrl_animation" toId="@+id/checked" fromId="@+id/unchecked"/>
+    <transition drawable="@drawable/btn_checkbox_checked_to_unchecked_mtrl_animation" toId="@+id/unchecked" fromId="@+id/checked"/>
+</animated-selector>

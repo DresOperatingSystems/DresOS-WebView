@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.view.menu.ExpandedMenuView id="@+id/expanded_menu" layout_width="?attr/panelMenuListWidth" layout_height="wrap_content"/>

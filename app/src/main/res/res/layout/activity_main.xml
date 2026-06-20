@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout id="@+id/header" layout_width="match_parent" layout_height="match_parent">
+    <include id="@+id/main_error_view" layout_width="match_parent" layout_height="wrap_content" layout_alignParentTop="true" layout="@layout/persistent_error_message"/>
+    <FrameLayout id="@+id/content_fragment" layout_width="match_parent" layout_height="match_parent" layout_above="@+id/bottom_divider" layout_below="@+id/main_error_view"/>
+    <View id="@+id/bottom_divider" background="?android:attr/listDivider" layout_width="match_parent" layout_height="1dp" layout_above="@+id/nav_view"/>
+    <LinearLayout orientation="horizontal" id="@+id/nav_view" background="?android:attr/windowBackground" padding="10dp" layout_width="match_parent" layout_height="wrap_content" layout_alignParentBottom="true">
+        <TextView gravity="center_horizontal" id="@+id/navigation_home" layout_width="0dp" layout_height="match_parent" text="Home" drawableTop="@drawable/ic_action_home" layout_weight="1"/>
+        <TextView gravity="center_horizontal" id="@+id/navigation_crash_ui" layout_width="0dp" layout_height="match_parent" text="Crashes" drawableTop="@drawable/ic_alert_error" layout_weight="1"/>
+        <TextView gravity="center_horizontal" id="@+id/navigation_flags_ui" layout_width="0dp" layout_height="match_parent" text="Flags" drawableTop="@drawable/ic_flag" layout_weight="1"/>
+        <TextView gravity="center_horizontal" id="@+id/navigation_net_logs_ui" layout_width="0dp" layout_height="match_parent" text="Net Logs" drawableTop="@drawable/ic_net_log" layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

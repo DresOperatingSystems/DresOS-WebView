@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<alpha interpolator="@android:anim/decelerate_interpolator" duration="@android:integer/config_mediumAnimTime" fromAlpha="1" toAlpha="0"/>

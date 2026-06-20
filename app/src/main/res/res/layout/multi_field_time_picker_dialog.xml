@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout gravity="start" layout_gravity="center_vertical" orientation="vertical" layout_width="wrap_content" layout_height="wrap_content">
+    <TextView textSize="20sp" textColor="#33b5e5" gravity="start" paddingTop="5dp" paddingBottom="5dp" layout_width="wrap_content" layout_height="wrap_content" text="@string/time_picker_dialog_title" paddingStart="5dp" paddingEnd="5dp"/>
+    <View background="#33b5e5" paddingTop="5dp" paddingBottom="5dp" layout_width="match_parent" layout_height="2dp"/>
+    <LinearLayout gravity="center" layout_gravity="center_horizontal" orientation="horizontal" layout_width="wrap_content" layout_height="wrap_content">
+        <NumberPicker textSize="12sp" id="@+id/hour" focusable="true" focusableInTouchMode="true" layout_width="0dp" layout_height="wrap_content" layout_weight="0.2" contentDescription="@string/accessibility_time_picker_hour" layout_marginStart="4dp" layout_marginEnd="4dp"/>
+        <TextView textSize="12sp" layout_width="wrap_content" layout_height="wrap_content" text="@string/time_picker_dialog_hour_minute_separator"/>
+        <NumberPicker textSize="12sp" id="@+id/minute" focusable="true" focusableInTouchMode="true" layout_width="0dp" layout_height="wrap_content" layout_weight="0.2" contentDescription="@string/accessibility_time_picker_minute" layout_marginStart="4dp" layout_marginEnd="4dp"/>
+        <TextView textSize="12sp" id="@+id/second_colon" layout_width="wrap_content" layout_height="wrap_content" text="@string/time_picker_dialog_minute_second_separator"/>
+        <NumberPicker textSize="12sp" id="@+id/second" focusable="true" focusableInTouchMode="true" layout_width="0dp" layout_height="wrap_content" layout_weight="0.2" contentDescription="@string/accessibility_time_picker_second" layout_marginStart="4dp" layout_marginEnd="4dp"/>
+        <TextView textSize="12sp" id="@+id/second_dot" layout_width="wrap_content" layout_height="wrap_content" text="@string/time_picker_dialog_second_subsecond_separator"/>
+        <NumberPicker textSize="12sp" id="@+id/milli" focusable="true" focusableInTouchMode="true" layout_width="0dp" layout_height="wrap_content" layout_weight="0.2" contentDescription="@string/accessibility_time_picker_milli" layout_marginStart="4dp" layout_marginEnd="4dp"/>
+        <NumberPicker textSize="12sp" id="@+id/ampm" focusable="true" focusableInTouchMode="true" layout_width="0dp" layout_height="wrap_content" layout_weight="0.2" contentDescription="@string/accessibility_time_picker_ampm" layout_marginStart="4dp" layout_marginEnd="4dp"/>
+    </LinearLayout>
+</LinearLayout>

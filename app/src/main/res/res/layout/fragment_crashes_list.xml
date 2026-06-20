@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout orientation="vertical" id="@+id/fragment_crashes_list" layout_width="match_parent" layout_height="match_parent">
+    <TextView textAppearance="?android:attr/textAppearanceLarge" id="@+id/crashes_summary_textview" paddingTop="16dp" paddingBottom="16dp" layout_width="match_parent" layout_height="wrap_content" paddingStart="10dp" paddingEnd="10dp"/>
+    <View background="?android:attr/listDivider" layout_width="match_parent" layout_height="1dp"/>
+    <ExpandableListView id="@+id/crashes_list" layout_width="match_parent" layout_height="match_parent" childDivider="#00000000"/>
+</LinearLayout>

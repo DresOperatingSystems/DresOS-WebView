@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector drawable="@drawable/btn_checkbox_checked_mtrl">
+    <target name="icon_null" animation="@anim/btn_checkbox_to_unchecked_icon_null_animation"/>
+    <target name="check_path_merged" animation="@anim/btn_checkbox_to_unchecked_check_path_merged_animation"/>
+    <target name="box_inner_merged" animation="@anim/btn_checkbox_to_unchecked_box_inner_merged_animation"/>
+</animated-vector>

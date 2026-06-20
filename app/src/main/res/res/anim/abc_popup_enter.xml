@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set shareInterpolator="false">
+    <alpha interpolator="@android:anim/decelerate_interpolator" duration="@integer/abc_config_activityShortDur" fromAlpha="0" toAlpha="1"/>
+</set>

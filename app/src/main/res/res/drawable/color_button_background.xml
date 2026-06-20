@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item left="0dp" top="0dp" right="0dp" bottom="0dp">
+        <shape shape="rectangle">
+            <solid color="@color/color_picker_border_color"/>
+        </shape>
+    </item>
+    <item left="1px" top="0px" right="1px" bottom="0px">
+        <shape shape="rectangle">
+            <solid color="@color/color_picker_background_color"/>
+        </shape>
+    </item>
+    <item id="@+id/color_button_swatch" left="2px" top="1px" right="2px" bottom="1px">
+        <shape shape="rectangle">
+            <solid color="#ff0000"/>
+        </shape>
+    </item>
+</layer-list>

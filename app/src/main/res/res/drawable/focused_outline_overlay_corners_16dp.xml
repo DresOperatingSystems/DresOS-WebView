@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape shape="rectangle">
+    <solid color="@android:color/transparent"/>
+    <stroke width="@dimen/focused_outline_stroke_width" color="@color/baseline_primary_20"/>
+    <corners radius="@dimen/focused_outline_corner_radius_card"/>
+</shape>

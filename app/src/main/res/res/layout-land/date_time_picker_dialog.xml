@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView layout_width="wrap_content" layout_height="wrap_content">
+    <LinearLayout gravity="center" layout_gravity="center_horizontal" orientation="horizontal" layout_width="wrap_content" layout_height="wrap_content">
+        <DatePicker layout_gravity="center" id="@+id/date_picker" layout_width="wrap_content" layout_height="wrap_content" contentDescription="@string/accessibility_datetime_picker_date" spinnersShown="true" calendarViewShown="false" paddingStart="7.5dp" datePickerMode="spinner"/>
+        <TimePicker layout_gravity="center" id="@+id/time_picker" layout_width="wrap_content" layout_height="wrap_content" contentDescription="@string/accessibility_datetime_picker_time" timePickerMode="spinner"/>
+    </LinearLayout>
+</ScrollView>

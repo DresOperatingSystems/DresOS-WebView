@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set shareInterpolator="false">
+    <alpha interpolator="@anim/emphasized" duration="150" fromAlpha="1" toAlpha="0"/>
+</set>

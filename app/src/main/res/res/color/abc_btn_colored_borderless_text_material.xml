@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item state_enabled="false" color="?android:attr/textColorSecondary" alpha="?android:attr/disabledAlpha"/>
+    <item color="?attr/colorAccent"/>
+</selector>

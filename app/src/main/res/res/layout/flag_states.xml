@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView textAppearance="?android:attr/textAppearanceSmall" textStyle="bold" id="@+id/flag_states" paddingTop="10dp" paddingBottom="10dp" clickable="false" layout_width="match_parent" layout_height="wrap_content" layout_marginTop="5dp" layout_marginBottom="5dp" singleLine="true"/>

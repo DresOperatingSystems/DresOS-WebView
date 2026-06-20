@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Chronometer textAppearance="@style/TextAppearance.Compat.Notification.Time" id="@+id/chronometer" layout_width="wrap_content" layout_height="wrap_content" singleLine="true"/>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nine-patch src="@drawable/popup_bg" tint="@color/dialog_bg_color_baseline" tintMode="multiply"/>

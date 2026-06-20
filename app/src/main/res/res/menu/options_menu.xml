@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <group id="@+id/nav_menu_group">
+        <item id="@+id/options_menu_switch_provider" title="Change WebView Provider" showAsAction="never"/>
+        <item id="@+id/options_menu_report_bug" title="Report WebView Bug" showAsAction="never"/>
+        <item id="@+id/options_menu_check_updates" title="Check for WebView updates" showAsAction="never"/>
+        <item id="@+id/options_menu_safe_mode" title="SafeMode status" showAsAction="never"/>
+        <item id="@+id/options_menu_about_devui" title="About WebView DevTools" showAsAction="never"/>
+    </group>
+</menu>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape shape="oval">
+    <size height="@dimen/abc_progress_bar_height_material" width="@dimen/abc_progress_bar_height_material"/>
+    <solid color="@android:color/white"/>
+</shape>

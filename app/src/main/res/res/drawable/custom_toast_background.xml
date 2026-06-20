@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape>
+    <corners radius="200dp"/>
+    <padding left="20dp" right="20dp"/>
+    <solid color="@color/toast_bg_color_baseline"/>
+</shape>

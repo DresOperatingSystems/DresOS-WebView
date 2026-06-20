@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout orientation="vertical" id="@+id/toggleable_flag" layout_width="match_parent" layout_height="wrap_content">
+    <TextView textAppearance="@style/MediumText" textStyle="bold" id="@+id/flag_name" paddingTop="8dp" paddingBottom="8dp" layout_width="match_parent" layout_height="wrap_content" drawablePadding="4dp" textIsSelectable="true"/>
+    <TextView textAppearance="?android:attr/textAppearanceSmall" id="@+id/flag_description" layout_width="match_parent" layout_height="wrap_content" textIsSelectable="true"/>
+    <Spinner id="@+id/flag_toggle" layout_width="match_parent" layout_height="wrap_content" spinnerMode="dialog"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set>
+    <set ordering="sequentially">
+        <objectAnimator interpolator="@interpolator/fast_out_slow_in" duration="183" valueFrom="2" valueTo="2" valueType="floatType" propertyName="strokeWidth"/>
+        <objectAnimator interpolator="@interpolator/fast_out_slow_in" duration="16" valueFrom="2" valueTo="18" valueType="floatType" propertyName="strokeWidth"/>
+        <objectAnimator interpolator="@interpolator/fast_out_slow_in" duration="300" valueFrom="18" valueTo="2" valueType="floatType" propertyName="strokeWidth"/>
+    </set>
+</set>

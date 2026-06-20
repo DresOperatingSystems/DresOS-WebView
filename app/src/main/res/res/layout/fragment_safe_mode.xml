@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout orientation="vertical" id="@+id/fragment_safe_mode" layout_width="match_parent" layout_height="wrap_content">
+    <TextView text="SafeMode State" style="@style/HeaderTextView"/>
+    <TextView id="@+id/safe_mode_state" style="@style/SubHeaderTextView"/>
+    <View background="?android:attr/listDivider" layout_width="match_parent" layout_height="1dp"/>
+    <LinearLayout orientation="vertical" id="@+id/safe_mode_actions_container" layout_width="match_parent" layout_height="match_parent">
+        <TextView text="Active Actions" style="@style/HeaderTextView"/>
+        <ListView id="@+id/safe_mode_actions_list" layout_width="match_parent" layout_height="match_parent" divider="@null"/>
+    </LinearLayout>
+</LinearLayout>

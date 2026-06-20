@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate drawable="@drawable/ic_expand_more_black_24dp" fromDegrees="@integer/expand_more_horizontal_rotation_degree" toDegrees="@integer/expand_more_horizontal_rotation_degree"/>

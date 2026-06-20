@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout orientation="vertical" background="@drawable/list_menu_background" layout_width="match_parent" layout_height="match_parent" elevation="@dimen/list_menu_elevation" clipToOutline="true">
+    <org.chromium.ui.listmenu.KeyboardAccessibleListView id="@+id/menu_header" layout_width="match_parent" layout_height="wrap_content"/>
+    <View id="@+id/menu_header_bottom_hairline" focusable="false" visibility="invisible" layout_height="@dimen/divider_height" screenReaderFocusable="false" style="@style/HorizontalDivider"/>
+    <org.chromium.ui.listmenu.KeyboardAccessibleListView id="@+id/menu_list" layout_width="match_parent" layout_height="0dp" layout_weight="1"/>
+</LinearLayout>

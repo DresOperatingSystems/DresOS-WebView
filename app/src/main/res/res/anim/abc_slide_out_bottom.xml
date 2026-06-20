@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translate interpolator="@android:anim/accelerate_interpolator" duration="@android:integer/config_mediumAnimTime" fromYDelta="0" toYDelta="50%p"/>

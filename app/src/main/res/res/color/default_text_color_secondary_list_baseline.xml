@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item state_enabled="false" color="@color/default_text_color_secondary_baseline" alpha="@dimen/default_disabled_alpha"/>
+    <item color="@color/default_text_color_secondary_baseline"/>
+</selector>
