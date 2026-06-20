@@ -1,0 +1,12 @@
+# Never commit signing material
+*.keystore
+*.jks
+*.idsig
+
+# APKs are attached to GitHub Releases, not committed to the repo
+*.apk
+
+# Build / editor noise
+*.log
+*.tmp
+.DS_Store

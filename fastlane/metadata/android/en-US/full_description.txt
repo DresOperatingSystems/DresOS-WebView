@@ -1,0 +1,14 @@
+DresOS WebView is a hardened, de-Googled Android System WebView, built from
+Cromite (a Bromite successor) and rebranded for DresOS.
+
+It is the WebView engine that other apps use to render web content - in-app
+browsers, login screens, embedded pages - rather than a browser you open
+directly. It inherits Cromite's privacy hardening and ad/tracker blocking on top
+of Chromium's upstream exploit mitigations.
+
+To make Android use it, also install the DresOS WebView Overlay Magisk module,
+which whitelists this provider in the framework, then select it under
+Developer options > WebView implementation.
+
+DresOS WebView is part of DresOperatingSystems, an open-source Android privacy
+and defensive-security project. It is free software under GPL-3.0.
