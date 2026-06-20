@@ -10,8 +10,7 @@ This app complements the WebView section of the
 [DresOS build guide](https://github.com/DresOperatingSystems/DresOS-The-Android-Defensive-Security-System).
 
 Part of [DresOperatingSystems](https://github.com/DresOperatingSystems) - an
-open-source Android privacy and defensive-security project. Website:
-[dresoperatingsystems.github.io](https://dresoperatingsystems.github.io).
+open-source Android privacy and defensive-security project.
 
 ---
 
@@ -27,7 +26,7 @@ apps use to render web content (in-app browsers, login screens, embedded pages).
 
 ## Install
 
-There are two ways to get it, easiest first:
+There are two ways to get it:
 
 1. **Obtainium** - add this repository as an app source and Obtainium will track
    GitHub releases and update you automatically. Source URL:
@@ -43,10 +42,11 @@ trusted WebView providers.
 
 We have made a Magisk module specifically for this so:
 
-. Install the **DresOS WebView** Magisk module, which adds
-   `org.dresos.webview` to the framework whitelist by its signing certificate.
-   It lives in
-   [DresOS-Magisk-Modules/webview](https://github.com/DresOperatingSystems/DresOS-Magisk-Modules/tree/main/webview).
+Install the **DresOS WebView** Magisk module, which adds
+`org.dresos.webview` to the framework whitelist by its signing certificate.
+
+It lives in
+[DresOS-Magisk-Modules/webview](https://github.com/DresOperatingSystems/DresOS-Magisk-Modules/tree/main/webview).
 
 [Download latest release](https://github.com/DresOperatingSystems/DresOS-Magisk-Modules/releases/download/webview-v2.2.0/DresOS-WebView-v2_2_0.zip)
 
