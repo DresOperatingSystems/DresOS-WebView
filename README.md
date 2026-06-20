@@ -92,3 +92,7 @@ hardening credited here is upstream work by the Chromium and Cromite projects.
 ## End notes
 
 We will be building on top of our webview and slowly add in our own security features but we want to thank both Bromite and Cromite so thank you.
+
+[![Please Help fund future projects and keep this one going](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/dresos)
+
+> **Help fund the next module.** DresOS is built by a small open source team in our spare time. If this guide saves you a weekend of research, tip the jar at [ko-fi.com/dresos](https://ko-fi.com/dresos). Funds go to test devices, hosting, and developer time on the next Magisk module.
